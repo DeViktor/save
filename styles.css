@@ -120,7 +120,7 @@ section, article{
     background-color: white;
     box-shadow: 1px rgb(0, 0, 0.5);
     border-radius: 10px;
-    padding: 50px 0 50px;
+    padding: 50px 0 70px;
 }
 .promo-section4 .content .article-card h3{
     font-size: 45px;
@@ -131,4 +131,7 @@ section, article{
 }
 .promo-section4 .content .article-card img{
     padding: 10px;
+}
+.promo-section4 .content .article-card{
+    margin-top: 100px;
 }
