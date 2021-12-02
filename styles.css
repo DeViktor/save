@@ -12,6 +12,10 @@ body{
 section, article{
     display: block;
 }
+h2{
+    padding: 0;
+    margin: 0;
+}
 .banner-box img{
     max-width: 100%;
 }
@@ -36,12 +40,12 @@ section, article{
 .content{
     margin: 0px auto;
     padding-top: 60px;
-    max-width: 1400px;
+    max-width: calc(100% - 30px);
 }
 .high{
     background: #F0D304;
     font-size: 24px;
-    padding: 5px;
+    padding: 1px;
 }
 .false-grid{
     max-width: 500px;
@@ -88,6 +92,9 @@ section, article{
     max-width: 400px;
     height: 300px;
 }
+.card p{
+    max-width: 400px;
+}
 .card-number{
     font-size: 45px;
     line-height: 140%;
@@ -98,6 +105,14 @@ section, article{
     width: 45px;
     height: 45px;
     margin: 0 auto 45px;
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    grid-gap: 25px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .card-icon svg{
     padding-top: 15px;
@@ -111,16 +126,25 @@ section, article{
     font-size: 18px;
     padding: 150px 250px 2px;
 }
+.promo-section4{
+    padding: 100px 0 110px;
+}
+.promo-section4 .content .article-card .card-icon svg{
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+}
 .promo-section4 h2{
     padding-top: 50px;
     font-size: 30px;
     font-weight: 500;
 }
 .article-card{
+    margin-top: 60px;
     background-color: white;
     box-shadow: 1px rgb(0, 0, 0.5);
     border-radius: 10px;
-    padding: 50px 0 70px;
+    padding: 20px 0 70px;
 }
 .promo-section4 .content .article-card h3{
     font-size: 45px;
@@ -131,7 +155,148 @@ section, article{
 }
 .promo-section4 .content .article-card img{
     padding: 10px;
+    max-height: 45px;
 }
-.promo-section4 .content .article-card{
-    margin-top: 100px;
+.promo-section5{
+    position: relative;
+    margin-top: 10px;
+    background: url(assets/banner-end.png) center bottom no-repeat;
+    background-position: center;
+    height: 480px;
+}
+.promo-section5 .content{
+ display: flex;
+}
+.promo-section5 .content .false-grid{
+    background: whitesmoke;
+    /* width: 450px;
+    height: 350px; */
+    border-radius: 8px;
+    margin-left: auto;
+}
+.card-body{
+    padding: 10px;
+    text-align: left;
+    max-width: 450px;
+    margin: 50px;
+}
+.card-body button{
+    width: 240px;
+    height: 45px;
+    background: #EB212E;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: .04em;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    grid-gap: 10px;
+    border: none;
+}
+.card-body h2{
+    font-size: 22px;
+    line-height: 140%;
+    color: #0C2449;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+.card-body p{
+    font-size: 18px;
+    line-height: 140%;
+    color: #0C2449;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 975px) {
+.false-grid{
+    margin: 0 auto;
+}
+.false-grid h2{
+    font-size: 25px;
+}
+.promo-section2 .content{
+ background-size: 500px;
+ padding: 50px 0 600px;
+ background-position: center bottom;
+}
+.promo-section3{
+    padding: 70px 0 60px;
+}
+.promo-section3 .content{
+    flex-direction: column;
+}
+.promo-section3 .text-end{
+    margin-top: 15px;
+    padding: 0 20px;
+}
+.promo-section5 .content .false-grid{
+    background: whitesmoke;
+    /* width: 450px;
+    height: 350px; */
+    border-radius: 8px;
+    margin-left: auto;
+}
+.promo-section5{
+    position: relative;
+    margin-top: 5px;
+    background: url(assets/banner-end.png) center bottom no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+.card-body{
+    padding: 10px;
+    text-align: left;
+    max-width: 350px;
+    margin: 20px;
+}
+}
+@media screen and (max-width: 425px) {
+    .false-grid{
+        margin: 0 auto;
+    }
+    .false-grid h2{
+        font-size: 25px;
+    }
+    .promo-section2 .content{
+     background-size: 350px;
+     padding: 50px 0 600px;
+     background-position: center bottom;
+    }
+    .promo-section3{
+        padding: 70px 0 60px;
+    }
+    .promo-section3 .content{
+        flex-direction: column;
+    }
+    .promo-section3 .text-end{
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+    .promo-section5 .content .false-grid{
+        background: whitesmoke;
+        /* width: 450px;
+        height: 350px; */
+        border-radius: 8px;
+        margin-left: auto;
+    }
+    .promo-section5{
+        position: relative;
+        margin-top: 5px;
+        background: url(assets/banner-end.png) center bottom no-repeat;
+        background-position: center;
+        height: 100%;
+        background-size: cover;
+    }
+    .card-body{
+        padding: 10px;
+        text-align: left;
+        max-width: 250px;
+        margin: 10px;
+    }
 }
